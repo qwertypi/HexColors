@@ -16,12 +16,12 @@
 
 @implementation HXColor (HexColorAddition)
 
-+ (HXColor *)colorWithHexString:(NSString *)hexString
++ (HXColor *)colorWithHex:(NSString *)hexString
 {
-    return [[self class] colorWithHexString:hexString alpha:1.0];
+    return [[self class] colorWithHex:hexString alpha:1.0];
 }
 
-+ (HXColor *)colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha
++ (HXColor *)colorWithHex:(NSString *)hexString alpha:(CGFloat)alpha
 {
     // Check for hash and add the missing hash
     if('#' != [hexString characterAtIndex:0])
